@@ -29,10 +29,10 @@ def findBook(book):
     if EC.visibility_of_element_located((By.ID, "modal__content")):        
         print("yes")
         
-    book = driver.find_element_by_css_selector('button.gr-iconButton')
-    print(book)
+    #book = driver.find_element_by_css_selector('button.gr-iconButton')
+    #print(book)
     
-    print("Book found is: ")
+    print("Book found is: ",driver)
     print("Author: ")
     answer = (input("Continue? (Y/N): "))
     if str(answer) == "Y":
